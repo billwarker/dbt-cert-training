@@ -1,0 +1,27 @@
+jaffle-shop-nick:
+  target: local
+  outputs:
+    
+    dev:
+      dataset: dev
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: "secrets/jaffle-shop-nick-dev.json"
+      location: US
+      method: service-account
+      priority: interactive
+      project: "jaffle-shop-nick-dev"
+      threads: 4
+      type: bigquery
+
+    prod:
+      dataset: prod
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: "secrets/jaffle-shop-nick-prod.json"
+      location: US
+      method: service-account
+      priority: interactive
+      project: "jaffle-shop-nick-prod"
+      threads: 4
+      type: bigquery

@@ -1,9 +1,8 @@
-name: 'jaffle_shop'
-
+name: 'jaffle_shop_nick'
+version: '1.0.0'
 config-version: 2
-version: '0.1'
 
-profile: 'jaffle_shop'
+profile: 'jaffle-shop-nick'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
