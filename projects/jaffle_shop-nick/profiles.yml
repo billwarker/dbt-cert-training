@@ -1,5 +1,5 @@
 jaffle-shop-nick:
-  target: local
+  target: dev
   outputs:
     
     dev:

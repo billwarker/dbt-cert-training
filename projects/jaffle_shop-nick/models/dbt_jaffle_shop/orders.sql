@@ -1,6 +1,14 @@
+{{
+    config(
+        materialized='table',
+        enabled = true,
+        target = "dev"
+    ) 
+}}
+
 {% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
 
-with orders as (
+WITH orders AS (
 
     select * from {{ ref('stg_orders') }}
 
