@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized='table',
+        enabled = true,
+        target = "dev"
+    ) 
+}}
 with source as (
     
     {#-
