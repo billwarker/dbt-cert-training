@@ -3,3 +3,10 @@ target/
 dbt_modules/
 logs/
 **/.DS_Store
+
+jaffle-shop-will-dev-b917b7f83e97.json
+jaffle-shop-will-prod-e71366b2ca6b.json
+
+jaffle_shop-will/
+
+.user.yml
