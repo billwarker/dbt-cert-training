@@ -18,4 +18,15 @@ The goal of this repo is to store practice code and training resources used in p
 - Create GCP project for practicing
 - Clone Jaffle Shop into `projects/will-jaffle-shop`
 
+## dbt Milestones
 
+- [ ] Create a useful macro with Jinja
+- [ ] Implement source freshness
+- [ ] Write a custom test for a model
+- [ ] Use codegen, dbt_utils packages
+- [ ] Create a dbt exposure
+- [ ] Create a dbt analysis
+- [ ] Create a dbt snapshot
+- [ ] Create a python model
+- [ ] Use Jinja templating language in creating DRY code for a model
+- [ ] Understand all of the config options for resource properties
