@@ -12,6 +12,8 @@ The goal of this repo is to store practice code and training resources used in p
 
 - [dbt Analytics Engineering Certification Exam Study Guide](https://www.getdbt.com/assets/uploads/dbt_certificate_study_guide.pdf)
 
+- [How Fivetran + dbt actually fail](https://www.reddit.com/r/dataengineering/comments/xxfmat/how_fivetran_dbt_actually_fail/)
+
 ## To-Do
 
 - Add Study Plan
