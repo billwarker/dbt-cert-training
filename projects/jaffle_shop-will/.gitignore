@@ -9,4 +9,6 @@ jaffle-shop-will-prod-e71366b2ca6b.json
 
 jaffle_shop-will/
 
+dbt_packages/
+
 .user.yml
