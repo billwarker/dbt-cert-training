@@ -23,7 +23,7 @@ The goal of this repo is to store practice code and training resources used in p
 ## dbt Milestones
 
 - [ ] Create a useful macro with Jinja
-- [ ] Implement source freshness
+- [x] Implement source freshness
 - [ ] Write a custom test for a model
 - [ ] Use codegen, dbt_utils packages
 - [ ] Create a dbt exposure
