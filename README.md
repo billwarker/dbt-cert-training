@@ -14,6 +14,11 @@ The goal of this repo is to store practice code and training resources used in p
 
 - [How Fivetran + dbt actually fail](https://www.reddit.com/r/dataengineering/comments/xxfmat/how_fivetran_dbt_actually_fail/)
 
+## Studying Docs
+
+- [Progress Sync](https://docs.google.com/document/d/1MPwNXuyeBqjwfcUeMVRx-AbRIW8X4Bt0kKq2pHtCIiY/edit?usp=sharing)
+- [Will's Notes](https://docs.google.com/document/d/18gH7w68tCgesLYHfDyxC1U3xiQli7bLy_dmp5-M18uw/edit?usp=sharing)
+
 ## To-Do
 
 - Add Study Plan
