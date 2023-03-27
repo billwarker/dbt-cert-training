@@ -32,3 +32,4 @@ The goal of this repo is to store practice code and training resources used in p
 - [ ] Create a python model
 - [ ] Use Jinja templating language in creating DRY code for a model
 - [ ] Understand all of the config options for resource properties
+- [ ] Write a detailed .yml description for a model/source, using all available documentation features
