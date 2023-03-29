@@ -21,9 +21,7 @@ The goal of this repo is to store practice code and training resources used in p
 
 ## To-Do
 
-- Add Study Plan
-- Create GCP project for practicing
-- Clone Jaffle Shop into `projects/will-jaffle-shop`
+- Figure out production deployment
 
 ## dbt Milestones
 
