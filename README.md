@@ -28,7 +28,8 @@ The goal of this repo is to store practice code and training resources used in p
 
 - [ ] Create a useful macro with Jinja
 - [x] Implement source freshness
-- [ ] Write custom tests for a model (singular, generic)
+- [x] Create a custom singular test for a model
+- [ ] Import/Create a custom generic test for a model
 - [ ] Import additional tests/packages into project
 - [ ] Use codegen, dbt_utils packages
 - [ ] Create a dbt exposure
