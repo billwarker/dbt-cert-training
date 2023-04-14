@@ -40,3 +40,12 @@ The goal of this repo is to store practice code and training resources used in p
 - [ ] Use Jinja templating language in creating DRY code for a model
 - [ ] Understand all of the config options for resource properties
 - [ ] Write a detailed .yml description for a model/source, using all available documentation features
+- [ ] Have a complete prod deployment
+
+## dbt Course Completion
+
+- [x] dbt Fundamentals
+- [ ] Jinja, Macros, and Packages
+- [ ] Advanced Materializations
+- [ ] Analyses and Seeds
+- [ ] Refactoring SQL for Modularity
