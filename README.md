@@ -21,8 +21,9 @@ The goal of this repo is to store practice code and training resources used in p
 
 ## To-Do
 
-- Figure out production deployment
-- Manage branches
+- [ ] Figure out production deployment
+- [x] Manage branches
+- [ ] Join dbt slack
 
 ## dbt Milestones
 
