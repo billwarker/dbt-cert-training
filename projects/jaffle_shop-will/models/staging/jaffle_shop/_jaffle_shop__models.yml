@@ -1,6 +1,7 @@
 version: 2
 
 models:
+
   - name: stg_customers
     description: >
       Staged customer data from our jaffle shop app.
@@ -11,6 +12,8 @@ models:
         tests:
           - unique
           - not_null
+
+
 
   - name: stg_orders
     description: >
