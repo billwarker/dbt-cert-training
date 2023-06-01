@@ -1,3 +1,9 @@
+{{
+  config(
+    enabled = false
+  )
+}}
+
 with
 -- import ctes
 orders as (
