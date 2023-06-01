@@ -16,7 +16,7 @@ employees as (
     select
         employee_id,
         email,
-        customer_id
+        customer_id,
 
     from {{ ref('seed_employees') }}
 
