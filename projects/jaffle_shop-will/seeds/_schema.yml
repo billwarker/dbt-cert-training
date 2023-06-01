@@ -1,0 +1,17 @@
+version: 2
+
+seeds:
+  - name: seed_employees
+    description: a manual upload mapping employee ids to customer ids
+    columns:
+      - name: employee_id
+        description: An employee's id number
+        tests:
+          - unique
+          - not_null
+      - name: email
+        tests:
+          - unique
+      - name: customer_id
+        tests:
+          - not_null
