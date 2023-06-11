@@ -4,7 +4,7 @@ with source as (
 
 ),
 
-renamed as (
+transformed as (
 
     select
         id as payment_id,
@@ -13,11 +13,11 @@ renamed as (
         status,
 
         -- `amount` is currently stored in cents, so we convert it to dollars
-        amount / 100 as amount,
+        round(amount/100.0,2) AS payment_amount,
         created as created_at
 
     from source
 
 )
 
-select * from renamed
+select * from transformed
