@@ -1,7 +1,7 @@
 with 
 customers as (
 
-    select * from {{ ref('stg_customers') }}
+    select * from {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 
@@ -42,8 +42,8 @@ final as (
 
     select
         customers.customer_id,
-        customers.first_name,
-        customers.last_name,
+        customers.givenname,
+        customers.surname,
         employees.employee_id as is_employee,
         employees.email as employee_email,
         customer_orders.first_order_date,
