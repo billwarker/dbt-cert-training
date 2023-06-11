@@ -2,7 +2,7 @@ version: 2
 
 models:
 
-  - name: stg_customers
+  - name: stg_jaffle_shop__customers
     description: >
       Staged customer data from our jaffle shop app.
     columns:
@@ -15,7 +15,7 @@ models:
 
 
 
-  - name: stg_orders
+  - name: stg_jaffle_shop__orders
     description: >
       Staged customer data from our jaffle shop app.
     columns:
@@ -35,5 +35,5 @@ models:
           Foreign key for stg_customers.customer_id.
         tests:
           - relationships:
-              to: ref('stg_customers')
+              to: ref('stg_jaffle_shop__customers')
               field: customer_id
