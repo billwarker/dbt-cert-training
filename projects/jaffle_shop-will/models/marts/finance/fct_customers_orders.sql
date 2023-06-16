@@ -34,9 +34,9 @@ customer_order_history as (
 
     max(o.valid_order_date) as most_recent_non_returned_order_date,
 
-    coalesce(max(o.user_order_seq),0) as order_count,
+    coalesce(max(o.user_order_seq), 0) as order_count,
 
-    coalesce(count(o.valid_order_date),0) as non_returned_order_count,
+    coalesce(count(o.valid_order_date), 0) as non_returned_order_count,
 
     sum(case
       when o.valid_order_date is not null
@@ -66,25 +66,21 @@ customer_order_history as (
 ),
 
 -- final cte
+-- columns must match original legacy query
 
 final as (
   select
 
     o.order_id,
-    o.order_date,
     o.customer_id,
     coh.surname,
     coh.givenname,
-    o.order_value_dollars,
-    o.order_status,
-    o.payment_status,
-
     coh.first_order_date,
     coh.order_count,
     coh.total_lifetime_value,
-    coh.first_non_returned_order_date,
-    coh.most_recent_non_returned_order_date,
-    coh.non_returned_order_count,
+    o.order_value_dollars,
+    o.order_status,
+    o.payment_status
 
   from orders o
 
