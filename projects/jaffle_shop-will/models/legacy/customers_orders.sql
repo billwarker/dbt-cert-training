@@ -1,3 +1,9 @@
+{{
+  config(
+    enabled = true
+  )
+}}
+
 select 
     orders.id as order_id,
     orders.user_id as customer_id,
