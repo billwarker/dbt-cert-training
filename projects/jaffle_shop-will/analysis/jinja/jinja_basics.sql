@@ -55,3 +55,7 @@ Too hot
 {% set my_dict ={'word': 'yeet', 'definition': 'to express joy'} %}
 
 The word {{ my_dict['word'] }} means {{ my_dict['definition'] }}
+
+-- Basic Macro
+
+{{ hello_world(name = 'Will') }}
