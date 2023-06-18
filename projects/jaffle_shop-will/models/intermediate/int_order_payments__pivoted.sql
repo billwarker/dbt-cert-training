@@ -1,4 +1,4 @@
-{% set payment_methods = ['bank_transfer', 'credit_card', 'coupon', 'gift_card'] %}
+{%- set payment_methods = ['bank_transfer', 'credit_card', 'coupon', 'gift_card'] -%}
 
 with payments as (
     select * from {{ref('stg_stripe__payments')}}
