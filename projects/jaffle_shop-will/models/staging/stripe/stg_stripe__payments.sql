@@ -13,7 +13,7 @@ transformed as (
         status,
 
         -- `amount` is currently stored in cents, so we convert it to dollars
-        round(amount/100.0,2) AS payment_amount,
+        {{ cents_to_dollars(amount, 2) }} AS payment_amount,
         created as created_at
 
     from source
