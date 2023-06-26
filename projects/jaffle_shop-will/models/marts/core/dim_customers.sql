@@ -1,13 +1,24 @@
 with 
 customers as (
 
-    select * from {{ ref('stg_customers') }}
+    select * from {{ ref('stg_jaffle_shop__customers') }}
 
 ),
 
 orders as (
 
     select * from {{ ref('fct_orders') }}
+
+),
+
+employees as (
+
+    select
+        employee_id,
+        email,
+        customer_id,
+
+    from {{ ref('seed_employees') }}
 
 ),
 
@@ -31,8 +42,10 @@ final as (
 
     select
         customers.customer_id,
-        customers.first_name,
-        customers.last_name,
+        customers.givenname,
+        customers.surname,
+        employees.employee_id as is_employee,
+        employees.email as employee_email,
         customer_orders.first_order_date,
         customer_orders.most_recent_order_date,
         coalesce(customer_orders.number_of_orders, 0) as number_of_orders,
@@ -41,6 +54,8 @@ final as (
     from customers
 
     left join customer_orders using (customer_id)
+
+    left join employees using (customer_id)
 
 )
 

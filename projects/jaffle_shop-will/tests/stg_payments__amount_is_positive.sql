@@ -1,10 +1,10 @@
 with payments as (
-    select * from {{ref('stg_payments')}}
+    select * from {{ref('stg_stripe__payments')}}
 )
 
 select
     order_id,
-    sum(amount) as total_amount
+    sum(payment_amount) as total_amount
 
 from payments
 
