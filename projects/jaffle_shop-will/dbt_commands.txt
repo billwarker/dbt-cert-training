@@ -2,3 +2,5 @@ dbt run-operation generate_source --args '{"database_name": "dbt-tutorial", "sch
 dbt source freshness
 
 dbt run-operation required_docs
+
+dbt run-operation generate_model_yaml --args '{"model_names": ["customers"]}'

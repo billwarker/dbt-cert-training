@@ -68,6 +68,7 @@ models:
           - relationships:
               to: ref('dim_customers')
               field: customer_id
+              
       - name: surname
         description: ""
 
@@ -90,4 +91,22 @@ models:
         description: ""
 
       - name: payment_status
+        description: ""
+
+  - name: fct_daily_revenue_by_payment_type
+    description: "Daily revenue by payment type"
+    columns:
+      - name: payment_date
+        description: ""
+
+      - name: credit_card
+        description: ""
+
+      - name: bank_transfer
+        description: ""
+
+      - name: coupon
+        description: ""
+
+      - name: gift_card
         description: ""
