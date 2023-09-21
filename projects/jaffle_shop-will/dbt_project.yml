@@ -22,8 +22,13 @@ require-dbt-version: [">=1.0.0", "<2.0.0"]
 
 models:
   jaffle_shop:
+    +persist_docs:
+      relation: true
+      columns: true
     marts:
+      +required_docs: true
       +materialized: table
+      +required_tests: {"unique.*|not_null": 1}
     staging:
       +materialized: view
     legacy:

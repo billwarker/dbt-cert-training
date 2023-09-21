@@ -1,2 +1,4 @@
 dbt run-operation generate_source --args '{"database_name": "dbt-tutorial", "schema_name": "jaffle_shop"}' >> models/staging/jaffle_shop/_jaffle_shop__sources.yml
 dbt source freshness
+
+dbt run-operation required_docs
