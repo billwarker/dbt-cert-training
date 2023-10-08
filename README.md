@@ -41,6 +41,7 @@ The goal of this repo is to store practice code and training resources used in p
 - [ ] Understand all of the config options for resource properties
 - [ ] Write a detailed .yml description for a model/source, using all available documentation features
 - [ ] Have a complete prod deployment
+- [ ] Have test coverage as CICD requirements with `dbt_meta_testing` package
 
 ## dbt Course Completion
 

@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: fct_orders
-    description: This table has basic information about orders, as well as some derived facts based on payments
+    description: This table has basic information about orders, as well as some derived facts based on payments.
 
     columns:
       - name: order_id
@@ -52,3 +52,61 @@ models:
         description: Amount of the order (AUD) paid for by gift card
         tests:
           - not_null
+
+  - name: fct_customers_orders
+    description: Orders with associated customer LTV metrics.
+    columns:
+      - name: order_id
+        description: "Primary Key"
+        tests:
+          - unique
+          - not null
+
+      - name: customer_id
+        description: ""
+        tests:
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+              
+      - name: surname
+        description: ""
+
+      - name: givenname
+        description: ""
+
+      - name: first_order_date
+        description: ""
+
+      - name: order_count
+        description: ""
+
+      - name: total_lifetime_value
+        description: ""
+
+      - name: order_value_dollars
+        description: ""
+
+      - name: order_status
+        description: ""
+
+      - name: payment_status
+        description: ""
+
+  - name: fct_daily_revenue_by_payment_type
+    description: "Daily revenue by payment type"
+    columns:
+      - name: payment_date
+        description: ""
+
+      - name: credit_card
+        description: ""
+
+      - name: bank_transfer
+        description: ""
+
+      - name: coupon
+        description: ""
+
+      - name: gift_card
+        description: ""
