@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Switch to jaffle_shop-will
+        run: cd projects/jaffle_shop-will
       - name: Set up Python 3.10.5
         uses: actions/setup-python@v4
         with:
