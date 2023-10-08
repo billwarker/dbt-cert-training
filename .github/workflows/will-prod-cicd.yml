@@ -1,5 +1,5 @@
-yaml
 name: will-prod CICD
+
 on:
   pull_request:
     branches:
@@ -8,12 +8,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Set up Python 3.10.5
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10.5'
-    - name: Install dependencies
-      run: pip3 install -r requirements.txt
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python 3.10.5
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.5'
+      - name: Install dependencies
+        run: pip3 install -r requirements.txt
