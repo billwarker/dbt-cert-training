@@ -24,3 +24,4 @@ jobs:
         run: |
           dbt deps
           dbt run-operation required_tests
+
