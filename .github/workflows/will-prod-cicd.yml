@@ -19,6 +19,10 @@ jobs:
         working-directory: ./projects/jaffle_shop-will
         run: |
           pip3 install -r requirements.txt
+      - name: Run dbt compile
+        working-directory: ./projects/jaffle_shop-will
+        run: |
+          dbt compile 
       - name: Run dbt deps and required tests
         working-directory: ./projects/jaffle_shop-will
         run: |
