@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
+
       - name: Set up Python 3.10.5
         uses: actions/setup-python@v4
         with:
@@ -22,14 +22,14 @@ jobs:
         run: |
           pip3 install -r requirements.txt
 
-      - name: Run dbt compile
-        working-directory: ./projects/jaffle_shop-will
-        run: |
-          dbt compile
-
-      - name: Run dbt deps and required tests
+      - name: Run dbt deps and dbt compile
         working-directory: ./projects/jaffle_shop-will
         run: |
           dbt deps
+          dbt compile
+
+      - name: Run required tests
+        working-directory: ./projects/jaffle_shop-will
+        run: |
           dbt run-operation required_tests
 
