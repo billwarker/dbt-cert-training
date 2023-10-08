@@ -1,5 +1,5 @@
-yaml
 name: will-prod CICD
+
 on:
   pull_request:
     branches:
