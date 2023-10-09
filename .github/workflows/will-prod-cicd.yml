@@ -11,9 +11,24 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Set up Python 3.10.5
         uses: actions/setup-python@v4
         with:
           python-version: '3.10.5'
-      - name: Install dependencies
-        run: cd projects/jaffle_shop-will; pip3 install -r requirements.txt
+
+      - name: Install packages from requirements.txt
+        working-directory: ./projects/jaffle_shop-will
+        run: |
+          pip3 install -r requirements.txt
+
+      - name: Run dbt deps
+        working-directory: ./projects/jaffle_shop-will
+        run: |
+          dbt deps
+
+      - name: Run required tests
+        working-directory: ./projects/jaffle_shop-will
+        run: |
+          dbt run-operation required_tests
+

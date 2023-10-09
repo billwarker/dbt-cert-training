@@ -60,7 +60,7 @@ models:
         description: "Primary Key"
         tests:
           - unique
-          - not null
+          - not_null
 
       - name: customer_id
         description: ""
@@ -98,6 +98,9 @@ models:
     columns:
       - name: payment_date
         description: ""
+        tests:
+          - unique
+          - not_null
 
       - name: credit_card
         description: ""
