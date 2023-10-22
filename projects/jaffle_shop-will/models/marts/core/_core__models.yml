@@ -13,6 +13,8 @@ models:
 
       - name: givenname
         description: Customer's first name. PII.
+        tests:
+          - assert_str_column_has_no_blanks
 
       - name: surname
         description: Customer's last name. PII.
