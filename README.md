@@ -27,26 +27,27 @@ The goal of this repo is to store practice code and training resources used in p
 
 ## dbt Milestones
 
-- [ ] Create a useful macro with Jinja
+- [x] Create a useful macro with Jinja
 - [x] Implement source freshness
 - [x] Create a custom singular test for a model
-- [ ] Import/Create a custom generic test for a model
-- [ ] Import additional tests/packages into project
-- [ ] Use codegen, dbt_utils packages
+- [x] Import/Create a custom generic test for a model
+- [x] Import additional tests/packages into project
+- [x] Use codegen, dbt_utils, dbt_expectations packages
 - [ ] Create a dbt exposure
-- [ ] Create a dbt analysis
+- [x] Create a dbt analysis
 - [ ] Create a dbt snapshot
 - [ ] Create a python model
-- [ ] Use Jinja templating language in creating DRY code for a model
+- [x] Use Jinja templating language in creating DRY code for a model
 - [ ] Understand all of the config options for resource properties
-- [ ] Write a detailed .yml description for a model/source, using all available documentation features
+- [x] Write a detailed .yml description for a model/source, using all available documentation features
 - [ ] Have a complete prod deployment
-- [ ] Have test coverage as CICD requirements with `dbt_meta_testing` package
+- [x] Have test coverage as CICD requirements with `dbt_meta_testing` package
 
 ## dbt Course Completion
 
 - [x] dbt Fundamentals
-- [ ] Jinja, Macros, and Packages
-- [ ] Advanced Materializations
-- [ ] Analyses and Seeds
-- [ ] Refactoring SQL for Modularity
+- [x] Jinja, Macros, and Packages
+- [x] Advanced Materializations
+- [x] Analyses and Seeds
+- [x] Refactoring SQL for Modularity
+- [ ] Advanced Testing
