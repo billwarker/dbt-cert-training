@@ -3,6 +3,9 @@ version: 2
 models:
   - name: fct_orders
     description: This table has basic information about orders, as well as some derived facts based on payments.
+    tests:
+      - dbt_utils.expression_is_true:
+          expression: "amount != 10000"
 
     columns:
       - name: order_id
