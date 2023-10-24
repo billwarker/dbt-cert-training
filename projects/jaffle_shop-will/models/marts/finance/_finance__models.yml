@@ -35,6 +35,9 @@ models:
         description: Total amount (AUD) of the order
         tests:
           - not_null
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 100
 
       - name: credit_card_amount
         description: Amount of the order (AUD) paid for by credit card
