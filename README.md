@@ -35,7 +35,7 @@ The goal of this repo is to store practice code and training resources used in p
 - [x] Use codegen, dbt_utils, dbt_expectations packages
 - [ ] Create a dbt exposure
 - [x] Create a dbt analysis
-- [ ] Create a dbt snapshot
+- [x] Create a dbt snapshot
 - [ ] Create a python model
 - [x] Use Jinja templating language in creating DRY code for a model
 - [ ] Understand all of the config options for resource properties
