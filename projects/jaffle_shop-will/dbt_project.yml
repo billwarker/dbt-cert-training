@@ -33,3 +33,9 @@ models:
       +materialized: view
     legacy:
       +enabled: false
+
+tests:
+  jaffle_shop:
+    marts:
+      core:
+        +limit: 10
