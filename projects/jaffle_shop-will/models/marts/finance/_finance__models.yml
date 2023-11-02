@@ -26,6 +26,7 @@ models:
                 severity: warn
                 error_if: ">100"
                 where: "order_date > '2018-03-01'"
+                limit: 1
 
       - name: order_date
         description: Date (UTC) that the order was placed
