@@ -42,6 +42,6 @@ models:
     columns:
       - name: date_day
         description: "Date Day"
-    tests:
-      - unique
-      - not_null
+        tests:
+          - unique
+          - not_null
