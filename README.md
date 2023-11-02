@@ -50,4 +50,4 @@ The goal of this repo is to store practice code and training resources used in p
 - [x] Advanced Materializations
 - [x] Analyses and Seeds
 - [x] Refactoring SQL for Modularity
-- [ ] Advanced Testing
+- [x] Advanced Testing
