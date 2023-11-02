@@ -27,6 +27,8 @@ models:
                 error_if: ">100"
                 where: "order_date > '2018-03-01'"
                 limit: 1
+                store_failures: true
+                schema: "test_failures"
 
       - name: order_date
         description: Date (UTC) that the order was placed
