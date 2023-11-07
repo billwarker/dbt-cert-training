@@ -1,0 +1,23 @@
+version: 2
+
+exposures:
+  - name: jaffle_shop_customers_and_orders
+    label: Jaffle Shop Customers and Orders
+    description: >
+      This dashboard reports on the status of orders and customer LTV.
+    type: dashboard
+    url: https://lookerstudio.google.com/s/oaAnMy_4dhM
+    maturity: medium
+    tags: ["Looker Studio"]
+    meta:
+      cool_dashboard: true
+      how_cool: "radical"
+    owner:
+      name: Will Barker
+      email: williamgeorge.barker@gmail.com
+    
+    depends_on:
+      - ref('fct_customers_orders')
+
+    config:
+      enabled: true

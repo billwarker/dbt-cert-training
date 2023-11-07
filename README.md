@@ -33,7 +33,7 @@ The goal of this repo is to store practice code and training resources used in p
 - [x] Import/Create a custom generic test for a model
 - [x] Import additional tests/packages into project
 - [x] Use codegen, dbt_utils, dbt_expectations packages
-- [ ] Create a dbt exposure
+- [x] Create a dbt exposure
 - [x] Create a dbt analysis
 - [x] Create a dbt snapshot
 - [ ] Create a python model
