@@ -20,7 +20,7 @@ clean-targets:
 
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
-on-run-start: "{{ hello_world('Will', 'Universe') }}"
+on-run-start: "{{ hello_world('Will', 'yo mama') }}"
 
 models:
   jaffle_shop:
