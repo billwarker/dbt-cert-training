@@ -13,6 +13,11 @@ jaffle_shop:
       threads: 4
       type: bigquery
 
+      # for dbt Python models to be run on Dataproc Serverless
+      gcs_bucket: dbt-python
+      dataproc_region: us-central1
+      submission_method: serverless
+
     prod:
       dataset: dbt
       job_execution_timeout_seconds: 300
